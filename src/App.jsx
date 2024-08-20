@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   // API key got by registering an app on Unsplash.com website
-  const apiKey = "i2YXnxdOEtGaoYDX8TBLnKBJH-FntGEwSOnW3lU1ok8";
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     // fulfilling the promise by fetch
